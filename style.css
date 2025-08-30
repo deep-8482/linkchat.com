@@ -17,21 +17,22 @@ body {
 .heading {
   text-align: center;
   color: #333;
+  text-decoration: underline;
 }
 
 .card {
-  background: #fff;
-  border-radius: 12px;
-  padding: 15px;
+  background: #ccd2d8;
+  border-radius: 6px;
+  padding: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .photo {
   display: block;
-  text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
   color: #0077ff;
   text-decoration: none;
+  text-decoration: underline;
 }
 
 .topbar {
@@ -42,7 +43,7 @@ body {
 }
 
 .logout {
-  background: #ff4d4d;
+  background: #0788bb;
   border: none;
   padding: 5px 10px;
   border-radius: 6px;
@@ -53,7 +54,7 @@ body {
 .messages {
   display: flex;
   flex-direction: column-reverse; /* newest at bottom visually */
-  height: 600px;
+  height: 500px;
   overflow-y: auto;
   border: 1px solid #ddd;
   padding: 10px;
@@ -63,14 +64,14 @@ body {
 
 .msg {
   padding: 8px 10px;
-  border-radius: 10px;
+  border-radius: 2px;
   margin-bottom: 8px;
   max-width: 80%;
   word-wrap: break-word;
 }
 
 .mine {
-  background: #d1ffd6;
+  background: #b0d3eb;
   align-self: flex-end;
 }
 
@@ -94,7 +95,6 @@ body {
 .msg-box{
   width: 100%;
   padding: 8px;
-  border-radius: 8px;
   border: 1px solid #c4b9b9;
 }
 
@@ -102,9 +102,9 @@ body {
   background: #0077ff;
   color: white;
   border: none;
-  border-radius: 8px;
   padding: 10px 15px;
   cursor: pointer;
+  width: 99px;
 }
 
 .link-box{

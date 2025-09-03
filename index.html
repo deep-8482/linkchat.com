@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+
+  <title>LinkChat</title>
+</head>
+<body>
+  <div class="wrap">
+    <h1 class="heading">LinkChat</h1>
+    
+    
+    <p>👇photo to link converter</p><a href="https://deep-photo-link.netlify.app/" target="_main" class="photo">Photo to link</a>
+
+    <!-- Login -->
+    <div id="login" class="card">
+      <h3>Sign in</h3>
+      <input id="email" placeholder="Email" class="email">
+      <input id="pass" type="password" placeholder="Password" class="pass">
+      <button id="login-btn" class="btn">Login</button>
+    </div>
+
+    <!-- Chat -->
+    <div id="chat" class="card" style="display:none">
+      <div class="topbar">
+        Signed in as: <span id="me"></span>
+        <button id="logout-btn" class="logout">Logout</button>
+      </div>
+
+      <!-- Message box at bottom -->
+      <div id="list" class="messages"></div>
+
+      <div class="input-area">
+        <textarea id="msg" rows="2" class="msg-box" placeholder="Message"></textarea>
+        <input id="link" class="link-box" placeholder="Link (optional)">
+        <button id="send-btn" class="btnsend">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Firebase + App -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>
